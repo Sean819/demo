@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单测试</title>
+</head>
+<body>
+    测试REST风格：
+    <form action="/user" method="get">
+        <input value="REST-GET 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input value="REST-POST 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="delete">
+        <input value="REST-DELETE 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="put">
+        <input value="REST-PUT 提交" type="submit"/>
+    </form>
+<br>
+    <a herf="/car/1">@PathVariable</a><br>
+    <a herf="/car/1">@RequestHeader</a><br>
+
+<form action="/save" method="post">
+    用户名：<input name="username"/>
+    邮箱：<input name="email"/>
+    <input type="submit" value="提交"/>
+</form>
+</body>
+</html>
